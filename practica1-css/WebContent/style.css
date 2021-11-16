@@ -1,0 +1,48 @@
+@charset "UTF-8";
+body{
+	font-family:Times New Roman;
+	background-color: #c7e9fb;
+	
+}
+header{
+	text-align: center;
+	color: blue;
+}
+.color::first-line{
+	color: red;
+}
+
+h1::first-letter{
+	color:black;
+	font-size: 250%
+}
+.cabecera:hover{
+	background-color: yellow;
+	color: red;
+}
+a.links {
+  
+  background-color: white;
+
+}
+
+a:visited {
+  background-color: blue;
+  border-color: hotpink;
+  color: hotpink;
+}
+p#title{
+	counter-reset: cuenta-ciclos;
+}
+p.invents::before {
+	content: counter(cuenta-ciclos) ". ";
+	counter-increment: cuenta-ciclos;
+}
+img#steve{
+	float:right;
+	width:260px;
+	height:240px;
+	
+	
+	
+}
